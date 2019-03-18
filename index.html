@@ -45,6 +45,7 @@
             <a href="#siteSkills">技能</a>
           </li>
           <li>
+             <!-- 需要监听 -->
             <a href="#siteWorks">作品</a>
             <ul class="submenu">
               <li>作品1</li>
@@ -53,7 +54,8 @@
             </ul>
           </li>
           <li>
-            <a href="#">博客</a>
+            <!-- 需要监听 -->
+            <a href="#">博客</a> 
             <ul class="submenu">
               <li>博客1</li>
               <li>博客2</li>
@@ -220,6 +222,46 @@
     document.onscroll=function(){
       scrollY>0 ? topNavBar.classList.add('sticky') : topNavBar.classList.remove('sticky')
     }
+    
+    let liTags = document.querySelectorAll('nav.menu > ul > li')
+    
+    for(let i=0; i<liTags.length; i++){
+      liTags[i].onmouseenter = function(x){
+        x.currentTarget.classList.add('active')
+      }
+      liTags[i].onmouseleave = function(x){
+        x.currentTarget.classList.remove('active')
+      }   
+    }
+    let aTags = document.querySelectorAll('nav.menu > ul > li > a')
+    for(let i=0; i<aTags.length; i++){
+      aTags[i].onclick = function(x){
+      
+        x.preventDefault()
+        let a = x.currentTarget
+        console.log(a)
+        let href = a.getAttribute('href') //'#siteAbout'
+        console.log(href)
+        let element = document.querySelector(href)
+        let top = element.offsetTop //常量
+
+
+        let n =25 //滚动25次
+        let duration = 500/n //每次用时多少秒
+        let currentTop=window.scrollY
+        let targetTop=top - 80
+        let distance=(targetTop-currentTop)/n //每次需要移动的距离
+        let counter = 0
+
+        let timerlId = setInterval(function(){
+         if(counter===n){window.clearInterval(timerlId) 
+         return}
+         counter++
+         window.scrollTo(0, currentTop + distance*counter)
+        },duration)
+      }
+    }
+
 </script>
 
   
