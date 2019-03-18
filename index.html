@@ -61,9 +61,6 @@
             </ul>
           </li>
           <li>
-            <a href="#">日历</a>
-          </li>
-          <li>
             <a href="#">联系方式</a>
           </li>
           <li>
@@ -73,6 +70,8 @@
       </nav>
     </div>
   </div>
+
+
   <div class="banner">
     <div class="mask"></div>
   </div>
@@ -218,7 +217,9 @@
     setTimeout(function(){
       siteWelcome.classList.remove('active')    
     },1000)
-
+    document.onscroll=function(){
+      scrollY>0 ? topNavBar.classList.add('sticky') : topNavBar.classList.remove('sticky')
+    }
 </script>
 
   
