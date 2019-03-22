@@ -134,8 +134,8 @@ section.portfolio > nav > ol > li:first-child{ margin-left: 0; }
 section.portfolio > nav{ display: inline-block; vertical-align: top; margin-top: 32px; }
 section.portfolio > nav .bar{ height: 5px; background: white; margin-top: 5px; margin-bottom: 28px; border-radius: 2px; }
 section.portfolio > nav .bar-inner{ height: 100%; background: #E6686A; border-radius: 2px; transition: all 0.3s; }
-section.portfolio > nav .bar.state-1 .bar-inner{ margin-left: 0; width: 50px; }
-section.portfolio > nav .bar.state-2 .bar-inner{ margin-left: 65px; width: 50px; }
-section.portfolio > nav .bar.state-3 .bar-inner{ margin-left: 140px; width: 96px; } 
+section.portfolio > nav .bar.state-1 .bar-inner{ margin-left: 0; width: 50px; transition: all 1s; }
+section.portfolio > nav .bar.state-2 .bar-inner{ margin-left: 65px; width: 50px; transition: all 1s;}
+section.portfolio > nav .bar.state-3 .bar-inner{ margin-left: 140px; width: 96px; transition: all 1s;} 
 section.portfolio .works{ position: relative; } 
 section.portfolio .works > .big, section.portfolio .works > .small { position: absolute; }
