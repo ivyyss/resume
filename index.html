@@ -4,6 +4,8 @@
 <head>
   <title>尹诗斯的个人简历</title>
   <script src="//at.alicdn.com/t/font_451045_32zbfqegtq3t0529.js"></script>
+  <script src="//at.alicdn.com/t/font_1103749_ar0xgstwbd.js"></script>
+
 <style type='text/css'>
   .loading{ width: 200px; height: 200px; position: relative; }
 
@@ -40,8 +42,11 @@
       <nav class="menu" style="float: right;">
         <ul class="clearfix">
           <li>
-            <a href="#siteAbout">关于</a>
+            <a href="#siteAbout">个人信息</a>
           </li>
+          <li>
+              <a href="#selfIntroduction">关于</a>
+            </li>
           <li>
             <a href="#siteSkills">技能</a>
           </li>
@@ -49,25 +54,26 @@
              <!-- 需要监听 -->
             <a href="#siteWorks">作品</a>
             <ul class="submenu">
-              <li>作品1</li>
-              <li>作品2</li>
-              <li>作品3</li>
+              <li><a href="./img/login.jpg" target="_blank">微信小程序</a></li>
+              <li><a href="https://ivyyss.github.io/ToDoList-Project/build/index.html" target="_blank">React.js-待办事项（数据在线储存）</a></li>              
+              <li><a href="https://ivyyss.github.io/Carousel-demo/carousel.html" target="_blank">jQuery-轮播</a></li>
+              <li><a href="https://ivyyss.github.io/canvas-demo/canvas.html" target="_blank">原生JS&CSS-画板Demo</a></li>
+              <li><a href="https://ivyyss.github.io/musicPlayer-demo/music.html" target="_blank">原生JS&CSS-音乐播放器Demo</a></li>
+              <li><a href="https://ivyyss.github.io/waterfall-demo/waterfall.html" target="_blank">原生JS&CSS-瀑布流布局Demo</a></li>
+              <li><a href="https://ivyyss.github.io/lazyLoad/load.html" target="_blank">原生JS&CSS-懒加载Demo</a></li>
             </ul>
           </li>
           <li>
             <!-- 需要监听 -->
             <a href="#">博客</a> 
             <ul class="submenu">
-              <li>博客1</li>
-              <li>博客2</li>
-              <li>博客3</li>
+              <li><a href="https://github.com/ivyyss" target="_blank">Git Hub</a></li>
+              <li><a href="https://www.jianshu.com/u/7c72e42298d7" target="_blank">简书</a></li>
             </ul>
           </li>
+       
           <li>
-            <a href="#">联系方式</a>
-          </li>
-          <li>
-            <a href="#">其他</a>
+            <a href="#others">其他</a>
           </li>
         </ul>
       </nav>
@@ -92,31 +98,28 @@
           <p>前端开发</p>
           <hr>
           <dl>
+            <dt>手机</dt>
+            <dd>138 9673 3256</dd>
+            <dt>邮箱</dt>
+            <dd>nameyss144@163.com</dd>
+            <dt>婚姻状况</dt>
+            <dd>未婚</dd>
             <dt>年龄</dt>
             <dd>27</dd>
             <dt>所在城市</dt>
             <dd>重庆</dd>
-            <dt>邮箱</dt>
-            <dd>nameyss144@163.com</dd>
-            <dt>手机</dt>
-            <dd>13896733256</dd>
           </dl>
         </div>
       </div>
-      <footer class="media">
-        <a href="#">
+      <footer class="media" id="media">
+        <a href="https://github.com/ivyyss" target="_blank">
           <svg class="icon" aria-hidden="true">
             <use xlink:href="#icon-github"></use>
           </svg>
         </a>
-        <a href="#">
+        <a href="https://www.jianshu.com/u/7c72e42298d7" target="_blank">
           <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-Ankerwebicon-"></use>
-          </svg>
-        </a>
-        <a href="#">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-weibo"></use>
+            <use xlink:href="#icon-CN_jianshu-copy"></use>
           </svg>
         </a>
       </footer>
@@ -126,9 +129,9 @@
       <a class="downloadResume" href="./resume.pdf" target="_blank" download>下载 PDF 简历</a>
     </p>
 
-    <p class="selfIntroduction">
+    <p data-x id="selfIntroduction" class="selfIntroduction">
       自我介绍
-      <br> 技能：前端开发
+      <br> 工作经历
     </p>
 
   </main>
@@ -189,32 +192,108 @@
     <h2>作品集</h2>
     <nav>
       <ol class="clearfix">
-        <li id="portfolio1">所有</li>
-        <li id="portfolio2">框架</li>
-        <li id="portfolio3">原生JS&amp;CSS</li>
+        <li id="portfolio1">React框架</li>
+        <li id="portfolio2">微信小程序</li>
+        <li id="portfolio3">jQuery</li>
+        <li id="portfolio4">原生JS&amp;CSS</li>
       </ol>
       <div id="portfolioBar" class="bar state-1">
         <div class="bar-inner"></div>
       </div>
     </nav>
 
-
-  
-
-
-    <div class="works" style="height: 597px;">
-      <div class="big" style="top: 0; left: 0;">
-        <img src="./img/1.jpg" alt="作品1">
-      </div>
-      <div class="small" style="top: 0; left: 645px;">
-        <img src="./img/2.jpg" alt="作品2">
-      </div>
-      <div class="small" style="top: 312px; left: 645px;">
-        <img src="./img/3.jpg" alt="作品3">
-      </div>
+ <!-- react -->
+ <div class="works react active" id="react" style="margin-top: 30px;">
+    <div class="introduction" style="width: 940px;">
+        <p>待办事项 <a href="https://ivyyss.github.io/ToDoList-Project/build/index.html" target="_blank">项目链接</a></p>
+        <ul>
+          <li>支持用户注册、登陆、邮箱密码找回功能。</li>
+          <li>支持用户增删待办事项，标记完成事项。界面友好，实时反馈待办完成度。</li>
+          <li>数据存储采用LeanCloud。</li>
+        </ul>
     </div>
+  <div class="big" style="top: 150px; left: 0; right:0; width: 613px; height: 661px;">
+    <img src="./img/react-index.png" alt="主页面">
+  </div>
 
+  <div class="small" style="top: 150px; left: 628px; height:300px; background:#DDDDDD;">
+    <img src="./img/react-signup.png" alt="注册" style="padding-top:15px; width: 311px; height: 193px;">
+  </div>
+  <div class="small" style="top: 440px; left: 628px; height: 300px; background:#DDDDDD;">
+      <img src="./img/react-signin-1.png" alt="登陆" style="width: 311px; height: 153px;">
+    </div>
+    <div class="small" style="top: 675px; left: 628px; height: 136px; background:#DDDDDD;">
+        <img src="./img/react-password.png" alt="忘记密码" style="width: 311px; height: 118px;">
+      </div>
+</div> 
+
+<!-- 微信小程序 -->
+    <div class="works wechat" id="wechat" style="margin-top: 30px;">
+        <div class="introduction" style="width: 940px;">
+            <p>微信小程序——荷包翻译 <a href="./img/login.jpg" target='_blank'>小程序二维码</a>
+            </p>
+            <ul>
+              <li>个人微信小程序工具类项目，可实现功能包括：自动检测原文语言，可选10余种翻译语言，翻译历史存储。</li>
+              <li>采用百度翻译api开发，界面设计参考自dribble。</li>
+            </ul>
+        </div>
+
+      <div class="big" style="top: 150px; left: 48px; width: 374px; height: 665px;">
+        <img src="./img/wechat-index.png" alt="主页面">
+      </div>
+      <div class="small" style="top: 150px; left: 517px; width: 374px; height: 380px;">
+        <img src="./img/lang.png" alt="语言选择">
+      </div>
+      <div class="small" style="top: 570px; left: 517px; width: 374px; height: 245px;">
+        <img src="./img/history.png" alt="翻译历史">
+      </div>
+    </div> 
+
+   
+
+
+<!-- Jquery -->
+   <div class="works jQuery" id="jQuery" style="margin-top: 30px;">
+        <div class="introduction" style="width: 940px;">
+            <p>轮播 <a href="https://ivyyss.github.io/Carousel-demo/carousel.html" target="_blank">项目链接</a></p>
+            <ul>
+              <li>jQuery实现轮播无缝轮播效果。</li>
+            </ul>
+        </div>
+      <div class="big" style="top: 150px; left: 0; right:0; width: 940px;">
+        <img src="./img/carousel.png" alt="轮播">
+      </div>
+    </div> 
+
+  <!-- js&css -->
+    <div class="works js" id="js" style="margin-top: 30px;">
+        <div class="introduction" style="width: 940px;">
+            <p>原生JS&amp;CSS Demo</p>
+            <ul>
+              <li>1.音乐播放器。实现音乐播放、暂停、上一曲/下一曲等功能。<a href="https://ivyyss.github.io/musicPlayer-demo/music.html" target="_blank">《音乐播放器》链接</a>
+              </li>
+              <li>2.canvas画板。实现画板橡皮擦、画笔粗细、颜色选择。用户保存功能。支持手机适配。<a href="https://ivyyss.github.io/canvas-demo/canvas.html" target="_blank">《canvas画板》链接</a>
+              </li>
+              <li>3.登陆-注册界面翻转效果。<a href="https://ivyyss.github.io/flip-signin-signup/login.html" target="_blank">《翻转登陆-注册界面》链接</a></li>
+              <li>4.其余demo：<a href="https://ivyyss.github.io/waterfall-demo/waterfall.html" target="_blank">瀑布流布局、</a><a href="https://ivyyss.github.io/lazyLoad/load.html" target="_blank">懒加载</a></li>
+            </ul>
+        </div>
+
+      <div class="big" style="top: 250px; left: 0; right:0; width: 613px; background:#DDDDDD;">
+        <img src="./img/music.png" alt="音乐播放器" style="padding:14px 0;">
+      </div>
+
+      <div class="small" style="top: 250px; left: 628px; height:300px; background:#DDDDDD;">
+        <img src="./img/canvas.png" alt="画板" style="padding-top:15px; width: 311px; height: 203px;">
+      </div>
+      <div class="small" style="top: 516px; left: 628px; background:#DDDDDD;">
+          <img src="./img/flip-login.png" alt="翻转登陆注册" style="width: 311px; height: 201px; padding-bottom: 14px;">
+        </div>
+    </div> 
   </section>
+  <section data-x id="others" class="footer">
+      <div class="footCover"></div>
+    </section>
 
 <script>
   //loading效果
@@ -311,15 +390,38 @@
 
     portfolio1.onclick= function(){
         portfolioBar.className = 'bar state-1'
-      }
-      portfolio2.onclick= function(){
-        portfolioBar.className = 'bar state-2'
-      }
-      portfolio3.onclick= function(){
-        portfolioBar.className = 'bar state-3'
+        wechat.classList.remove('active')
+        react.classList.add('active')
+        jQuery.classList.remove('active')
+        js.classList.remove('active')
       }
 
-</script>
+      portfolio2.onclick= function(){
+        portfolioBar.className = 'bar state-2'
+        react.classList.remove('active')
+        wechat.classList.add('active')
+        jQuery.classList.remove('active')
+        js.classList.remove('active')
+      }
+
+      portfolio3.onclick= function(){
+        portfolioBar.className = 'bar state-3'
+        jQuery.classList.add('active')
+        wechat.classList.remove('active')
+        react.classList.remove('active')
+        js.classList.remove('active')
+      }
+
+      portfolio4.onclick= function(){ 
+        portfolioBar.className = 'bar state-4'
+        js.classList.add('active')
+        wechat.classList.remove('active')
+        react.classList.remove('active')
+        jQuery.classList.remove('active')
+        
+      }
+
+</script>  
 
   
 </body>

@@ -49,6 +49,7 @@ h1,h2,h3,h4,h5,h6{ font-weight: normal; }
 
 
 .topNavBar .submenu{
+  font-size: 12px;
   display: none;
   position: absolute;
   right: 0;
@@ -123,9 +124,7 @@ section.skills > ol > li:nth-child(even) { float: right; }
 
 section.skills .progressBar { height: 5px; background: #FAE1E1; border-radius: 2px; margin: 4px 0 40px; overflow: hidden;}
 section.skills .progressBar > .progress { height: 100%; background: #E6686A; width: 70%; border-radius: 2px; transform: translateX(0);transition: all 1s;}
-section.skills.offset .progress{
-  transform: translateX(-100%);
-}
+section.skills.offset .progress{transform: translateX(-100%);}
 section.portfolio { text-align: center; margin-bottom: 100px; } 
 section.portfolio > nav{ text-align: center; }
 section.portfolio > nav > ol{ margin: 0 auto; display: inline-block; vertical-align: top; }
@@ -134,8 +133,21 @@ section.portfolio > nav > ol > li:first-child{ margin-left: 0; }
 section.portfolio > nav{ display: inline-block; vertical-align: top; margin-top: 32px; }
 section.portfolio > nav .bar{ height: 5px; background: white; margin-top: 5px; margin-bottom: 28px; border-radius: 2px; }
 section.portfolio > nav .bar-inner{ height: 100%; background: #E6686A; border-radius: 2px; transition: all 0.3s; }
-section.portfolio > nav .bar.state-1 .bar-inner{ margin-left: 0; width: 50px; transition: all 1s; }
-section.portfolio > nav .bar.state-2 .bar-inner{ margin-left: 65px; width: 50px; transition: all 1s;}
-section.portfolio > nav .bar.state-3 .bar-inner{ margin-left: 140px; width: 96px; transition: all 1s;} 
-section.portfolio .works{ position: relative; } 
-section.portfolio .works > .big, section.portfolio .works > .small { position: absolute; }
+section.portfolio > nav .bar.state-1 .bar-inner{ margin-left: 0; width: 95px; transition: all 1s; }
+section.portfolio > nav .bar.state-2 .bar-inner{ margin-left: 115px; width: 95px; transition: all 1s;}
+section.portfolio > nav .bar.state-3 .bar-inner{ margin-left: 220px; width: 85px; transition: all 1s;}
+section.portfolio > nav .bar.state-4 .bar-inner{ margin-left: 320px; width: 105px; transition: all 1s;} 
+
+section.portfolio .works{ position: relative; display: none;} 
+section.portfolio .works.active{ position: relative; display: block;} 
+section.portfolio .works > .big, section.portfolio .works > .small { position: absolute;} 
+section.portfolio .works > .big, section.portfolio .works > .small{ overflow: hidden;} 
+section.portfolio .works > .introduction{position:absolute; background-color:rgba(230, 104, 106, 0.8);padding: 10px 25px;}
+section.portfolio .works > .introduction > ul{text-align: left;}
+section.portfolio .works > .introduction > p > a{color:white; text-align: left;}
+section.portfolio .works > .introduction > p > a:hover{color:#E6686A;}
+section.portfolio .works > .introduction li > a{color:white;}
+section.portfolio .works > .introduction li > a:hover{color:#E6686A;}
+section.portfolio .works > .introduction li{padding: 2px 0;}
+section.footer{height: 90px;background-image: url(./img/rs-cover.jpg);background-position: center center;background-size: cover;margin-top: 900px;}
+section.footer > .footCover{height:90px;background-color: rgba(0, 0, 0, 0.8);}
