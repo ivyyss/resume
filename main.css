@@ -152,6 +152,9 @@ section.portfolio .works > .introduction > p > a{color:white; text-align: left;}
 section.portfolio .works > .introduction > p > a:hover{color:#E6686A;}
 section.portfolio .works > .introduction li > a{color:white;}
 section.portfolio .works > .introduction li > a:hover{color:#E6686A;}
+section.portfolio .works > .introduction li > a > svg {font-size: 15px;}
 section.portfolio .works > .introduction li{padding: 2px 0;}
+section.portfolio .works > .introduction li > span{background-color: beige;}
+
 section.footer{height: 90px;background-image: url(./img/rs-cover.jpg);background-position: center center;background-size: cover;margin-top: 900px;}
 section.footer > .footCover{height:90px;background-color: rgba(0, 0, 0, 0.8);}
